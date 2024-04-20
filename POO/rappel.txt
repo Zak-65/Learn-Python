@@ -1,0 +1,28 @@
+$ les methodes avec  __  __ son des methodes pre definies;
+$ Pour afficher les attributs d'un class :   __dict__;
+$ la methode str il appelle automatiqmant qaund  en appel une objet Print(S1)
+ ils ont fait pour dir si l'object ils exist ou non: __str__ ;
+$ c'est une methode pre definie pour supprimer les attribut non itulise en le itulise
+ pas il excute automatiqmant pour vider le memoir(en le fair pour donnes le droi de supprimer) : del;
+$Property cin = (get_cin(get_cin : c'est le nom de la fonction appelle),set_cin,del_cin,"optionelle"):
+    pour le appelle :- del S1.cin #supprimern  S1;
+                     - print (S1.cin) # afficher S1 
+
+$ Visiblites :
+            + :attribut publique 
+            - :attribut prive
+            # :attribut protege
+
+$ Getters & Setters :
+
+                    get():pour obtenir les infos
+                    set():pour modifier les infos
+ __ : prive;
+ _ : protege;
+ null : publique;              
+
+$Encapsulation & Privileges :
+                  Encapsulation:-Securite:
+                                
+                Modularites:c'est t'un ensemble de class Ex : import math en cree
+                             une personnele pour ne pas etre le code d'une seul page 
