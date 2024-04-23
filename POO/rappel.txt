@@ -7,6 +7,8 @@ $ c'est une methode pre definie pour supprimer les attribut non itulise en le it
 $Property cin = (get_cin(get_cin : c'est le nom de la fonction appelle),set_cin,del_cin,"optionelle"):
     pour le appelle :- del S1.cin #supprimern  S1;
                      - print (S1.cin) # afficher S1 
+// autre methode pour Property:
+            
 
 $ Visiblites :
             + :attribut publique 
@@ -26,3 +28,8 @@ $Encapsulation & Privileges :
                                 
                 Modularites:c'est t'un ensemble de class Ex : import math en cree
                              une personnele pour ne pas etre le code d'une seul page 
+$methodes prive : def __methode():
+$ del (__del__):del c'est pour summprimer une objet mais __del__ c'est les paramateres que va supprimer appre supression
+$ @classmethod 
+  def afficher(cls):
+    print("kndlfnd")
