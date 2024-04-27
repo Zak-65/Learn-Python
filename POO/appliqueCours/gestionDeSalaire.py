@@ -14,7 +14,7 @@ class Salaire:
     def __str__(self):
         resultSalaire = f'bonjour {self.nom} {self.prenom} de matricule : {self.__matricule} votre salaire est : {self.__salaire} salaire Net est :{self.CalculerSalaireNet()} departement : {self.departement} n°:{self.num}'
         return resultSalaire 
-    def CalculerSalaireNet(self):
+    def __calculerSalaireNet(self):
         SalaireNet = self.__salaire-(self.__salaire*self.tauxCS)
         return SalaireNet
     def get_salaire(self):
@@ -31,6 +31,10 @@ class Salaire:
     def __del__(self):
         Salaire.cmpt-= 1
         print(f'objet supprimer nmbr rester  de cmpt : {Salaire.cmpt}')
+    @property    
+    def afficher_salaire_net(self):
+        return self.__calculerSalaireNet
+
     # 2 methode pour property
     @property
     def matricule(self):
@@ -41,6 +45,16 @@ class Salaire:
         self.__matricule=z   
     # matriculation = property(get_matricul)
     # autre methode
+    #---------------
+    # methode de classe
+    @classmethod
+    def afichClass(cls):
+        print(f'le nombre de salarie est {cls.cmpt}')
+    # methode Statique
+    # @staticmethod
+    # def afichStatique():
+    #     print("hello word") 
+
 if __name__=='__main__':
     Salaire1=Salaire(1265,"sidqui","zakaria",3800)
     Salaire2=Salaire(1266,"marzoug","khalid",9800)
@@ -53,7 +67,11 @@ if __name__=='__main__':
     # print(Salaire1.matricule)
     print(Salaire.cmpt)
     print(Salaire1)
+    del(Salaire2)
+    Salaire.afichClass()
+    Salaire.afichStatique()
 
+    print(Salaire1.afficher_salaire_net)
 
 
 

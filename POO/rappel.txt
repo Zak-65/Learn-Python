@@ -33,3 +33,18 @@ $ del (__del__):del c'est pour summprimer une objet mais __del__ c'est les param
 $ @classmethod 
   def afficher(cls):
     print("kndlfnd")
+
+
+attribut prive : - Getter/Setters(get(),set(),del())
+                - Property(var=Property(..,.,..,))
+                - Décorateurs(@)
+
+methode prive : - __methode 
+
+methode Statique : c'est t'un methode quand peut cree sans avoir une object (pas besoin du paramateres self Decorateur @statique):
+                @statique
+                def testMethode():
+                  print("hello word")
+
+
+hertitage:  
